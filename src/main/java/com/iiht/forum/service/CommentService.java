@@ -36,9 +36,10 @@ public class CommentService
 	}
 
 	public List<VisitorCommentsDto> getAllComments() {
+		
 		return null;
+		
 	}	
-
 	public VisitorCommentsDto getVisitorCommentsDto(VisitorComments comments) {
 		return null;
 	}	
