@@ -11,9 +11,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+//@Data
+//@AllArgsConstructor
+//@NoArgsConstructor
 @Entity
 @Table(name = "postdata")
 public class VisitorPosts {
@@ -31,4 +31,54 @@ public class VisitorPosts {
 	
 	@Column(name = "postDescription")
 	private String postDescription;
+	
+	
+
+	public VisitorPosts() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public VisitorPosts(Long postId, String title, String tags, String postDescription) {
+		super();
+		this.postId = postId;
+		this.title = title;
+		this.tags = tags;
+		this.postDescription = postDescription;
+	}
+
+	public Long getPostId() {
+		return postId;
+	}
+
+	public void setPostId(Long postId) {
+		this.postId = postId;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getTags() {
+		return tags;
+	}
+
+	public void setTags(String tags) {
+		this.tags = tags;
+	}
+
+	public String getPostDescription() {
+		return postDescription;
+	}
+
+	public void setPostDescription(String postDescription) {
+		this.postDescription = postDescription;
+	}
+	
+	
+	
 }
